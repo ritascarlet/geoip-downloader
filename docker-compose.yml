@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  geoupdater:
+    build: .
+    container_name: geoupdater
+    restart: always
+    volumes:
+      - /opt/geofiles:/opt/geofiles
